@@ -1,0 +1,74 @@
+:root {
+    --bg-color: #000000;          /* Black background */
+    --num-color: #666666;         /* Grey buttons */
+    --num-hover: #555555;         /* Slightly darker on hover */
+    --op-color: #ff0033;          /* Cherry red operators */
+    --op-hover: #e6002e;          /* Darker cherry red on hover */
+    --text-color: #ffffff;        /* White text */
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculater {
+    background-color: #111;
+    padding: 16px;
+    max-width: 400px;
+    width: 300px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.display {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 6px 0 20px 0;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 2.4rem;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    gap: 12px;
+}
+
+.btn,
+#clear,
+#answereq,
+#back {
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#btn0{
+    grid-column: 1/4 ;
+    border-radius: 62px;
+    background-color: grey;
+}
+.btn:hover,#clear:hover,#back:hover,#answereq:hover{
+    background-color: rgba(128, 128, 128, 0.525);
+    transition: all 0.20s ease-in;
+}
+.right{
+    background-color: red;
+}
